@@ -3,7 +3,7 @@ uniform_float quality {
     min = 0.0;
     max = 10.0;
     step = 0.5;
-    description = "#{CloudShaders:quality}Quality of clouds";
+    description = "#{VolumetricCloudAndMist:quality}";
 }
 
 uniform_float scattering_factor {
@@ -11,17 +11,17 @@ uniform_float scattering_factor {
     min = 0.0;
     max = 5.0;
     step = 0.1;
-    description = "#{CloudShaders:scattering_factor}Extent of sky scattering (that tints distant objects toward the colour of the sky)";
+    description = "#{VolumetricCloudAndMist:scattering_factor}";
 }
 
 uniform_bool clouds_enabled {
     default = true;
-    description = "#{CloudShaders:clouds_enabled}Enable high-altitude clouds";
+    description = "#{VolumetricCloudAndMist:clouds_enabled}";
 }
 
 uniform_bool dynamic_clouds {
     default = true;
-    description = "#{CloudShaders:dynamic_clouds}Enable weather-dependent cloud cover";
+    description = "#{VolumetricCloudAndMist:dynamic_clouds}";
 }
 
 uniform_float cloud_density {
@@ -29,7 +29,7 @@ uniform_float cloud_density {
     min = 0.0;
     max = 5.0;
     step = 0.05;
-    description = "#{CloudShaders:cloud_density}Density of clouds";
+    description = "#{VolumetricCloudAndMist:cloud_density}";
 }
 
 uniform_float cloud_height {
@@ -37,17 +37,17 @@ uniform_float cloud_height {
     min = 2500.0;
     max = 500000.0;
     step = 1000;
-    description = "#{CloudShaders:cloud_height}Height of clouds above the water level";
+    description = "#{VolumetricCloudAndMist:cloud_height}";
 }
 
 uniform_bool mist_enabled {
     default = true;
-    description = "#{CloudShaders:mist_enabled}Enable low-altitude mist";
+    description = "#{VolumetricCloudAndMist:mist_enabled}";
 }
 
 uniform_bool dynamic_mist {
     default = true;
-    description = "#{CloudShaders:dynamic_mist}Enable weather-dependent mist";
+    description = "#{VolumetricCloudAndMist:dynamic_mist}";
 }
 
 uniform_float mist_density {
@@ -55,7 +55,7 @@ uniform_float mist_density {
     min = 0.0;
     max = 1.0;
     step = 0.05;
-    description = "#{CloudShaders:mist_density}Density of mist";
+    description = "#{VolumetricCloudAndMist:mist_density}";
 }
 
 uniform_float mist_height {
@@ -63,7 +63,7 @@ uniform_float mist_height {
     min = -8000;
     max = 8000;
     step = 250;
-    description = "#{CloudShaders:mist_height}Base height of mist around the water level";
+    description = "#{VolumetricCloudAndMist:mist_height}";
 }
 
 uniform_float mist_speed {
@@ -71,7 +71,7 @@ uniform_float mist_speed {
     min = 0.0;
     max = 5.0;
     step = 0.1;
-    description = "#{CloudShaders:mist_speed}The speed that mist moves through the world";
+    description = "#{VolumetricCloudAndMist:mist_speed}";
 }
 
 uniform_float mist_detail {
@@ -79,22 +79,22 @@ uniform_float mist_detail {
     min = 0.0;
     max = 1.5;
     step = 0.1;
-    description = "#{CloudShaders:mist_detail}Detailing visible in mist. If you experience rippling, turn this down";
+    description = "#{VolumetricCloudAndMist:mist_detail}";
 }
 
 uniform_bool mist_swirling {
     default = false;
-    description = "#{CloudShaders:mist_swirling}An additional swirling effect to mist";
+    description = "#{VolumetricCloudAndMist:mist_swirling}";
 }
 
 uniform_bool replace_skybox {
     default = false;
-    description = "#{CloudShaders:replace_skybox}Override the default skybox";
+    description = "#{VolumetricCloudAndMist:replace_skybox}";
 }
 
 uniform_bool better_sun {
     default = true;
-    description = "#{CloudShaders:better_sun}Enable better sun rendering";
+    description = "#{VolumetricCloudAndMist:better_sun}";
 }
 
 uniform_float point_glow_strength {
@@ -102,7 +102,7 @@ uniform_float point_glow_strength {
     min = 0.0;
     max = 1.0;
     step = 0.05;
-    description = "#{CloudShaders:point_glow_strength}Strength of glow around point lights";
+    description = "#{VolumetricCloudAndMist:point_glow_strength}";
 }
 
 uniform_float point_glow_min_fade_dist {
@@ -110,7 +110,7 @@ uniform_float point_glow_min_fade_dist {
     min = 0.0;
     max = 1024.0;
     step = 1.0;
-    description = "#{CloudShaders:point_glow_min_fade_dist}Minimum distance from the camera that the point light glow starts to fade in";
+    description = "#{VolumetricCloudAndMist:point_glow_min_fade_dist}";
 }
 
 uniform_float point_glow_max_fade_dist {
@@ -118,7 +118,7 @@ uniform_float point_glow_max_fade_dist {
     min = 0.0;
     max = 1024.0;
     step = 1.0;
-    description = "#{CloudShaders:point_glow_max_fade_dist}Distance from the camera that the point light glow fully fades in";
+    description = "#{VolumetricCloudAndMist:point_glow_max_fade_dist}";
 }
 
 uniform_float point_glow_fade {
@@ -126,12 +126,12 @@ uniform_float point_glow_fade {
     min = 0.0;
     max = 1.0;
     step = 0.05;
-    description = "#{CloudShaders:point_glow_fade}How much point lights fade out when they are too close. Use this to fade out torches/lamps that the player is holding.";
+    description = "#{VolumetricCloudAndMist:point_glow_fade}";
 }
 
 uniform_bool point_glow_diffusion {
     default = true;
-    description = "#{CloudShaders:point_glow_diffusion}Whether mist and clouds should influence point glow (may be expensive)";
+    description = "#{VolumetricCloudAndMist:point_glow_diffusion}";
 }
 
 uniform_float point_glow_min {
@@ -139,7 +139,7 @@ uniform_float point_glow_min {
     min = 0.0;
     max = 50.0;
     step = 1.0;
-    description = "#{CloudShaders:point_glow_min}The minimum distance at which point glow has its maximum value";
+    description = "#{VolumetricCloudAndMist:point_glow_min}";
 }
 
 uniform_float point_glow_falloff {
@@ -147,17 +147,17 @@ uniform_float point_glow_falloff {
     min = 0.5;
     max = 2.0;
     step = 0.025;
-    description = "#{CloudShaders:point_glow_falloff}The exponent used to control point glow falloff";
+    description = "#{VolumetricCloudAndMist:point_glow_falloff}";
 }
 
 uniform_bool clamp_point_glow {
     default = true;
-    description = "#{CloudShaders:clamp_point_glow}Whether point glow is clamped to the radius of the light (may reduce artifacts)";
+    description = "#{VolumetricCloudAndMist:clamp_point_glow}";
 }
 
 uniform_bool dithering_enabled {
     default = false;
-    description = "#{CloudShaders:dithering_enabled}Whether dithering is enabled, reducing color banding";
+    description = "#{VolumetricCloudAndMist:dithering_enabled}";
 }
 
 sampler_2d noise {
